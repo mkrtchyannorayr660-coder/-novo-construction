@@ -66,8 +66,32 @@ textarea{min-height:120px;resize:vertical}
 footer{background:#111;color:#aaa;padding:30px 7%;display:flex;justify-content:space-between;font-size:13px}
 footer strong{color:#fff;letter-spacing:3px}
 @media(max-width:800px){
- nav{display:none;position:absolute;top:70px;left:0;right:0;background:#111;padding:25px 7%;flex-direction:column}
- nav.open{display:flex}.menu{display:block}
+  nav{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    background:#111;
+    padding:25px 7%;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav.open{
+    display:flex;
+  }
+
+  .menu{
+    display:block;
+    position:relative;
+    z-index:30;
+  }
+
+  nav a{
+    color:#fff;
+    font-size:18px;
+  }
  .hero{min-height:600px}.hero p{font-size:16px}
  section{padding:75px 6%}.section-head{display:block}.section-head p{margin-top:20px}
  .services,.project-grid,.about,.contact-grid{grid-template-columns:1fr}
